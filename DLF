@@ -93,15 +93,7 @@ end
 
 local Discord = Instance.new("ScreenGui")
 Discord.Name = GenString(800,1049599)
-
-	if syn and syn.protect_gui then
-		syn.protect_gui(Discord)
-	elseif get_hidden_gui then
-		Discord.Parent = get_hidden_gui()
-	else
-		Discord.Parent = game:GetService("CoreGui")
-	end
-
+Discord.Parent = game:GetService("CoreGui")
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 function DiscordLib:Window(text)
