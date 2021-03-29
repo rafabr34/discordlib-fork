@@ -1,0 +1,28 @@
+ 
+
+
+game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
+if State == Enum.TeleportState.Started then
+local FuncaoDeTp = syn.queue_on_teleport or queue_on_teleport
+FuncaoDeTp([[
+for att=1,5 do
+wait(0.1)
+for _,v in pairs(game:GetService(Workspace):GetDescendants()) do
+if v:IsA("TouchTransmitter") and v.Parent.Name == 'Handle' then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+local noia = game.Players.LocalPlayer.Backpack
+if not string.find(noia, frutaprapegar)
+end
+
+end
+
+
+
+
+    ]])
+end
+end)
