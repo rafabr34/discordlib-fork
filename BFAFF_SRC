@@ -8,7 +8,7 @@ FuncaoDeTp([[
 print("LOADING")
 for att=1,5 do
 wait(0.1)
-for _,v in pairs(game:GetService(\"Workspace\"):GetDescendants()) do
+for _,v in pairs(game:GetService("Workspace"):GetDescendants()) do
 if v:IsA("TouchTransmitter") and v.Parent.Name == 'Handle' then
 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
 wait()
