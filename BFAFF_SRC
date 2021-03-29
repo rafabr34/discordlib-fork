@@ -15,7 +15,14 @@ wait()
 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
 end
 end
-local noia = game.Players.LocalPlayer.Backpack
+local noia = nil
+repeat
+wait(0.01)
+pcall(function()
+noia = game.Players.LocalPlayer.Backpack
+end)
+until noia ~= nil
+ 
 if not string.find(noia, frutaprapegar) then
 end
 
