@@ -21,7 +21,12 @@ firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent,
 end
 end
 end
-local noia = game.Players.LocalPlayer.Backpack
+local noia = {}
+for _,i in pairs(game.Players.LocalPlayer.Backpack:GetChildren())
+if not table.find(noia, i.Name)
+table.insert(noia, i.Name)
+end
+end
 if not string.find(noia, _G.fruitname) then
 end
 -- end
