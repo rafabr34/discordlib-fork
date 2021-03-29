@@ -6,9 +6,10 @@ if State == Enum.TeleportState.Started then
 local FuncaoDeTp = syn.queue_on_teleport or queue_on_teleport
 FuncaoDeTp([[
 --  script sub do caua
-_G.fruitname = _G.fruitname
+_G.fruitname = 'Flame'
 
 repeat wait() until game:IsLoaded() and game:GetService("Workspace").Characters:FindFirstChild(game.Players.LocalPlayer.Name)
+print('acho')
 
 for att=1,5 do
 wait(0.1)
