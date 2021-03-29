@@ -19,10 +19,14 @@ if not string.find(noia, frutaprapegar)
 end
 
 end
-
-
-
-
+game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
+if State == Enum.TeleportState.Started then
+local FuncaoDeTp = syn.queue_on_teleport or queue_on_teleport
+FuncaoDeTp([[
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rafabr34/discordlib-fork/main/BFAFF_SRC"))()
+]])
+end)
+print("LOADED")
     ]])
 end
 end)
