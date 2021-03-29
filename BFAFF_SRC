@@ -23,8 +23,8 @@ noia = game.Players.LocalPlayer.Backpack
 end)
 until noia ~= nil
  
-if not string.find(noia, frutaprapegar) then
-end
+--if not string.find(noia, frutaprapegar) then
+--end
 
 end
 game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
